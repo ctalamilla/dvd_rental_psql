@@ -6,6 +6,13 @@ Se copian los archivos de respaldo de la db DVDRENTAL dentro de la carpeta `entr
 Se copia un archivo bash para iniciar el script restore.sql.
 Se crea un volumen db-data para respaldar y persistir los cambios que se hagan en el contenedor.
 
+Para correr la autimatizacion es necesario ejecutar
+```
+bash init_all.sh
+```
+
+### Docker compose
+
 ```
 version: '3.8'
 services:

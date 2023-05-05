@@ -3,7 +3,7 @@ services:
   db:
     container_name: pg_container
     volumes:
-      #- db-data:/var/lib/postgresql/data
+      - db-data:/var/lib/postgresql/data
       - ./db:/docker-entrypoint-initdb.d
       - ./init_db_bash.sh:/data/init_db_bash.sh
     image: postgres
